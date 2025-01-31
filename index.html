@@ -19,7 +19,7 @@
     <style>
         .font-poppins {
             font-family: "Poppins", serif;
-            
+
         }
     </style>
     <script>
@@ -38,35 +38,76 @@
 
 <body class="font-poppins ">
     <header class="md:container md:mx-auto bg-gradient-to-r from-cyan-100 to-blue-200">
-        <nav class="px-20 mx-auto mb-4 ">
-            <div class="navbar bg-base-100 ">
+        <nav class="">
+            <div class="navbar max-w-screen-xl px-5 mx-auto space-x-2">
+
                 <div class="navbar-start">
-                    <div class="flex flex-col">
-                        <img class="" src="c2-assets/logo-header.png" alt="" />
-                    </div>
+                    <img src="c2-assets/logo-header.png" alt="" />
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end gap-5">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <button class="p-2 border-solid border-2 border-count-primary rounded-xl">Login</button>
-                    <button class="bg-count-primary text-white p-2 rounded-xl">Register</button>
+                <div class="navbar-end">
+                    <!-- icons -->
+                    <div class="navbar-end hidden lg:flex">
+                        <button class="btn btn-ghost btn-circle">
+                            <div class="indicator">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                                <span class="badge badge-xs badge-primary indicator-item"></span>
+                            </div>
+                        </button>
+                        <button class="btn btn-ghost btn-circle">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- buttons -->
+                    <div class="hidden lg:flex space-x-2">
+                        <div>
+                            <a class="btn btn-outline border-[#179800] text-black ">Login</a>
+                        </div>
+                        <div>
+                            <a class="btn btn-success">Register</a>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-bottom dropdown-end lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost ">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
+                    
         </nav>
-        <!-- animation part -->
-        <span class="relative  flex h-3 w-3">
-            <span
-                class="animate-ping text-center absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full  w-20 bg-sky-500"></span>
-        </span>
+        <div class="w-full flex items-center animate-bounce justify-center">
+            <img class=" w-16 rotate-90" src="https://img.icons8.com/?size=100&id=80625&format=png&color=000000" alt="">
+                      
+        </div>
         <!-- banner part -->
+
         <div class="my-16">
             <h1 class="text-4xl font-bold text-center mb-5">Freshness <span class="text-count-primary">You Can <br />
                     Count
@@ -118,42 +159,39 @@
             </div>
         </section>
         <!-- new cart -->
-         <section class="max-w-screen-xl mx-auto my-8">
-            <h1 class="text-3xl font-bold text-green-800 my-6">Vegetable Products</h1>
+        <section class="max-w-screen-xl mx-auto my-8">
+            <h1 class="text-3xl font-bold text-green-800 pl-4 my-6">Vegetable Products</h1>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
                 <!-- card-1 -->
-                <div class="border bg-white shadow-lg px-10 py-6 space-y-3 space-x-3">
-                    <img class="" src="images/download (1).jpeg" alt="" />
+                <div class=" bg-white shadow-lg px-12 rounded-xl  py-6 space-y-3 ">
+                    <img class="rounded-xl" src="images/download (1).jpeg" alt="" />
                     <h4 class=" font-bold">Fresh Food</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur <br />
-                         adipisicing elit. Harum, odit?</p>
-                        <button class="text-white rounded-md bg-green-800 h-10 px-8">Rede More</button>
+                    <p>Vegetables can be eaten either raw or cooked and play an important role in human nutrition.</p>
+                    <button class="text-white rounded-md bg-green-800 h-10 px-8">Rede More</button>
                 </div>
                 <!-- card-2 -->
-                <div class="border bg-white shadow-lg px-10 py-6 space-y-3 space-x-3">
-                    <img src="images/download (3).jpeg" alt="" />
+                <div class=" bg-white shadow-lg px-12 py-6 space-y-3 rounded-xl ">
+                    <img class="rounded-xl" src="images/download (3).jpeg" alt="" />
                     <h4 class=" font-bold">Fresh Food</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur <br />
-                         adipisicing elit. Harum, odit?</p>
-                        <button class="text-white rounded-md bg-green-800 h-10 px-8">Rede More</button>
+                    <p>Vegetables can be eaten either raw or cooked and play an important role in human nutrition.</p>
+                    <button class="text-white rounded-md bg-green-800 h-10 px-8">Rede More</button>
                 </div>
                 <!-- card-3 -->
-                <div class="border bg-white shadow-lg px-10 py-6  space-y-3 space-x-3">
-                    <img src="images/download (2).jpeg" alt="" />
+                <div class=" bg-white shadow-lg px-12 py-6 space-y-3 rounded-xl ">
+                    <img class="rounded-xl" src="images/download (2).jpeg" alt="" />
                     <h4 class=" font-bold">Fresh Food</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur <br />
-                         adipisicing elit. Harum, odit?</p>
-                        <button class="text-white rounded-md bg-green-800 h-10 px-8">Rede More</button>
+                    <p>Vegetables can be eaten either raw or cooked and play an important role in human nutrition.</p>
+                    <button class="text-white rounded-md bg-green-800 h-10 px-8">Rede More</button>
                 </div>
                 <!-- card-4 -->
-                <div class="border bg-white shadow-lg px-10 py-6 space-y-3 space-x-3">
-                    <img src="images/images (2).jpeg" alt="" />
+                <div class=" bg-white shadow-lg px-12 py-6 space-y-3 rounded-xl ">
+                    <img class="rounded-xl" src="images/images (2).jpeg" alt="" />
                     <h4 class=" font-bold">Fresh Food</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur <br />
-                         adipisicing elit. Harum, odit?</p>
-                        <button class="text-white rounded-md bg-green-800 h-10 px-8">Rede More</button></div>
+                    <p>Vegetables can be eaten either raw or cooked and play an important role in human nutrition.</p>
+                    <button class="text-white rounded-md bg-green-800 h-10 px-8">Rede More</button>
                 </div>
-         </section>
+            </div>
+        </section>
         <!-- popular products part -->
         <section class="bg-blue-200 my-8 py-16 mx-auto">
             <div class="max-w-screen-lg mx-auto p-2">
